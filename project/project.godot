@@ -11,6 +11,7 @@ config/description="PURExCONNECT Galgame Native Port via Godot 4.3 and Rust GDEx
 config/version="1.0.0"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://assets/icons/app_icon.png"
 boot_splash/show_image=false
 
 [display]
