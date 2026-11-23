@@ -42,7 +42,8 @@ jobs:
           mkdir -p project/bin/ios
           cp -f target/aarch64-apple-ios/release/libpure_connect_godot.a project/bin/ios/libpure_connect_godot.a
           lipo -info project/bin/ios/libpure_connect_godot.a
-          nm -gU project/bin/ios/libpure_connect_godot.a | grep gdext_rust_init | head -n 5
+          (nm -gU project/bin/ios/libpure_connect_godot.a 2>/dev/null || true) | grep -q "gdext_rust_init"
+          echo "Verified gdext_rust_init symbol present in libpure_connect_godot.a"
 
       - name: Cache Godot 4.3 macOS & Export Templates
         uses: actions/cache@v4
@@ -156,7 +157,7 @@ jobs:
           EXEC_NAME="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleExecutable' "${APP}/Info.plist")"
           test -x "${APP}/${EXEC_NAME}"
           file "${APP}/${EXEC_NAME}"
-          nm -gU "${APP}/${EXEC_NAME}" | grep gdext_rust_init || true
+          (nm -gU "${APP}/${EXEC_NAME}" 2>/dev/null || true) | grep -E "gdext_rust_init" | head -n 3 || true
 
       - name: Pseudo-sign with ldid & Package TrollStore IPA + Windows Shell
         run: |
