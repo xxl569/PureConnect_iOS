@@ -1,0 +1,46 @@
+# Rust 构建产物与动态/静态库
+target/
+project/target/
+*.dll
+*.dylib
+*.so
+*.a
+*.lib
+*.pdb
+*.exe
+
+# Godot 缓存与导出中间产物
+.godot/
+project/.godot/
+build/
+project/build/
+artifacts/
+reports/
+*.pck
+*.ipa
+*.xcarchive
+
+# 严禁提交原版游戏版权资产与大体积外置包（BYOA 壳肉分离红线）
+*.arc
+*.arc.bak
+*.gdb
+*.hvl
+*.ogv
+*.mpg
+*.mp4
+*.dat
+exe_unpacked/
+PURExCONNECT_iOS_BYOA/
+Archive/
+UserData/
+saves/
+
+# 本地工具可执行文件（如本地 Windows Godot）
+tools/godot/
+tools/ldid/
+
+# 系统与临时文件
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

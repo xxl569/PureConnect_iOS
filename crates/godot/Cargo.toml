@@ -1,0 +1,17 @@
+[package]
+name = "pure_connect_godot"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+godot = { version = "0.2", features = ["api-4-3"] }
+pure_connect_core = { path = "../core" }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+encoding_rs = "0.8"

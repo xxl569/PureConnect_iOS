@@ -1,0 +1,605 @@
+[gd_scene load_steps=5 format=3 uid="uid://pureconnectmain01"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_main"]
+
+[sub_resource type="SystemFont" id="SystemFont_cjk"]
+font_names = PackedStringArray("Microsoft YaHei", "SimHei", "PingFang SC", "Noto Sans CJK SC", "sans-serif")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_box"]
+bg_color = Color(0.04, 0.06, 0.1, 0.88)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.3, 0.5, 0.75, 0.6)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.6)
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_choice"]
+bg_color = Color(0.06, 0.08, 0.14, 0.94)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35, 0.6, 0.9, 0.8)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 0.75)
+shadow_size = 14
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+clip_contents = true
+mouse_filter = 1
+script = ExtResource("1_main")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 2
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 0
+
+[node name="CharacterSlots" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Slot1" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot2" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot3" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot4" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot5" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot6" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot7" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot8" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot9" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot10" type="TextureRect" parent="CharacterSlots"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -720.0
+offset_right = 340.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SprOverlayLayer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="SprOverlayPrev" type="TextureRect" parent="SprOverlayLayer"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SprOverlay" type="TextureRect" parent="SprOverlayLayer"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TransitionOverlay" type="ColorRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="DialogueBox" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = -225.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_box")
+
+[node name="OverlayLayer" type="Control" parent="DialogueBox"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ClickIcon" type="TextureRect" parent="DialogueBox/OverlayLayer"]
+layout_mode = 0
+offset_left = 1240.0
+offset_top = 185.0
+offset_right = 1264.0
+offset_bottom = 209.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Margin" type="MarginContainer" parent="DialogueBox"]
+layout_mode = 2
+mouse_filter = 1
+theme_override_constants/margin_left = 225
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="DialogueBox/Margin"]
+layout_mode = 2
+mouse_filter = 1
+theme_override_constants/separation = 8
+
+[node name="TopBar" type="HBoxContainer" parent="DialogueBox/Margin/VBox"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="SpeakerLabel" type="Label" parent="DialogueBox/Margin/VBox/TopBar"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.88, 0.5, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/font_size = 24
+text = "说话人"
+
+[node name="Spacer" type="Control" parent="DialogueBox/Margin/VBox/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="QuickMenu" type="HBoxContainer" parent="DialogueBox/Margin/VBox/TopBar"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 6
+
+[node name="BtnQSave" type="TextureButton" parent="DialogueBox/Margin/VBox/TopBar/QuickMenu"]
+custom_minimum_size = Vector2(58, 22)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="BtnQLoad" type="TextureButton" parent="DialogueBox/Margin/VBox/TopBar/QuickMenu"]
+custom_minimum_size = Vector2(58, 22)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="BtnLog" type="TextureButton" parent="DialogueBox/Margin/VBox/TopBar/QuickMenu"]
+custom_minimum_size = Vector2(58, 22)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="BtnAuto" type="TextureButton" parent="DialogueBox/Margin/VBox/TopBar/QuickMenu"]
+custom_minimum_size = Vector2(58, 22)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="BtnSkip" type="TextureButton" parent="DialogueBox/Margin/VBox/TopBar/QuickMenu"]
+custom_minimum_size = Vector2(58, 22)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="BtnConfig" type="TextureButton" parent="DialogueBox/Margin/VBox/TopBar/QuickMenu"]
+custom_minimum_size = Vector2(58, 22)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="BtnHide" type="TextureButton" parent="DialogueBox/Margin/VBox/TopBar/QuickMenu"]
+custom_minimum_size = Vector2(58, 22)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="TextContainer" type="Control" parent="DialogueBox/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+
+[node name="TextLabel" type="RichTextLabel" parent="DialogueBox/Margin/VBox/TextContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "台词正文..."
+scroll_active = false
+
+[node name="PromptLabel" type="Label" parent="DialogueBox/Margin"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 1, 0.6)
+theme_override_fonts/font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/font_size = 14
+text = "▼ 点击或按空格继续"
+
+[node name="FaceAvatarLayer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="FaceAvatarPrev" type="TextureRect" parent="FaceAvatarLayer"]
+visible = false
+layout_mode = 0
+offset_left = -207.0
+offset_top = 272.0
+offset_right = 405.0
+offset_bottom = 1100.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FaceAvatar" type="TextureRect" parent="FaceAvatarLayer"]
+visible = false
+layout_mode = 0
+offset_left = -207.0
+offset_top = 272.0
+offset_right = 405.0
+offset_bottom = 1100.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ChoiceBox" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -180.0
+offset_right = 320.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_choice")
+
+[node name="Margin" type="MarginContainer" parent="ChoiceBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="ChoiceVBox" type="VBoxContainer" parent="ChoiceBox/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+alignment = 1
+
+[node name="PromptLabel" type="Label" parent="ChoiceBox/Margin/ChoiceVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.6, 1)
+theme_override_fonts/font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="OptionsContainer" type="VBoxContainer" parent="ChoiceBox/Margin/ChoiceVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="BacklogPanel" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Backdrop" type="ColorRect" parent="BacklogPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.04, 0.08, 0.94)
+
+[node name="HeaderPanel" type="PanelContainer" parent="BacklogPanel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 54.0
+grow_horizontal = 2
+
+[node name="HeaderMargin" type="MarginContainer" parent="BacklogPanel/HeaderPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 8
+
+[node name="HeaderHBox" type="HBoxContainer" parent="BacklogPanel/HeaderPanel/HeaderMargin"]
+layout_mode = 2
+
+[node name="BacklogTitle" type="Label" parent="BacklogPanel/HeaderPanel/HeaderMargin/HeaderHBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.92, 1.0, 1)
+theme_override_fonts/font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/font_size = 22
+text = "【 履 历 / BACKLOG 】"
+
+[node name="Spacer" type="Control" parent="BacklogPanel/HeaderPanel/HeaderMargin/HeaderHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CloseBacklogBtn" type="Button" parent="BacklogPanel/HeaderPanel/HeaderMargin/HeaderHBox"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/font_size = 18
+text = " 返回游戏 (Close) "
+
+[node name="ScrollContainer" type="ScrollContainer" parent="BacklogPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = 64.0
+offset_right = -60.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="HistoryList" type="VBoxContainer" parent="BacklogPanel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="QuickNotify" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 30.0
+offset_right = 250.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.7, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.9)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BgmOsdLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 860.0
+offset_top = 18.0
+offset_right = 1260.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.95, 0.98, 1, 1)
+theme_override_colors/font_outline_color = Color(0.05, 0.1, 0.2, 0.9)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("SystemFont_cjk")
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="VoicePlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="BgmPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="SePlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="AmbiencePlayer" type="AudioStreamPlayer" parent="."]

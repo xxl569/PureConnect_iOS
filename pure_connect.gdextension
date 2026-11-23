@@ -1,0 +1,10 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = "4.3"
+reloadable = true
+
+[libraries]
+windows.debug.x86_64 = "res://target/debug/pure_connect_godot.dll"
+windows.release.x86_64 = "res://target/release/pure_connect_godot.dll"
+ios.debug.arm64 = "res://bin/ios/libpure_connect_godot.a"
+ios.release.arm64 = "res://bin/ios/libpure_connect_godot.a"
