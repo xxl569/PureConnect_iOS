@@ -29,11 +29,12 @@ reports/
 *.mpg
 *.mp4
 *.dat
-exe_unpacked/
-PURExCONNECT_iOS_BYOA/
-Archive/
-UserData/
-saves/
+/exe_unpacked/
+/PURExCONNECT_iOS_BYOA/
+/Archive/
+/project/Archive/
+/UserData/
+/saves/
 
 # 本地工具可执行文件（如本地 Windows Godot）
 tools/godot/
